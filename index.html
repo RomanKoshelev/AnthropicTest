@@ -558,9 +558,7 @@ async function sendMessage() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${key}`,
-        'HTTP-Referer': location.href,
-        'X-Title': 'AI Lawyer'
+        'Authorization': `Bearer ${key}`
       },
       body: JSON.stringify({
         model: MODEL,
